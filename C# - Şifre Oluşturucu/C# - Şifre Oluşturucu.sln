@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33711.374
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C# - Şifre Oluşturucu", "C# - Şifre Oluşturucu\C# - Şifre Oluşturucu.csproj", "{EB36CF4F-C24C-4336-802B-6070EFBA34B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB36CF4F-C24C-4336-802B-6070EFBA34B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB36CF4F-C24C-4336-802B-6070EFBA34B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB36CF4F-C24C-4336-802B-6070EFBA34B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB36CF4F-C24C-4336-802B-6070EFBA34B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A5DA0ED-2475-4ADE-B3EB-F7A4D2FF4795}
+	EndGlobalSection
+EndGlobal
