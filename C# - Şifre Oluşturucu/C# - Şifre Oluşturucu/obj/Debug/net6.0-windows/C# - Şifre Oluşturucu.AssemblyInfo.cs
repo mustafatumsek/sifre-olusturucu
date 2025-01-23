@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("C# - Şifre Oluşturucu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2256620d17773b2d83ce1d2a465188225f501cc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0aa67aa458a86d5eb7ccaad1e5062078d1c6c35a")]
 [assembly: System.Reflection.AssemblyProductAttribute("C# - Şifre Oluşturucu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("C# - Şifre Oluşturucu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
