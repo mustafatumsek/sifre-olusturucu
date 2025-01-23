@@ -4,7 +4,8 @@ Girilen sayı uzunluğunda, kullanıcının isteğine göre büyük harflerden, 
 
 ## Ekran Görüntüleri
   
-![image](https://github.com/user-attachments/assets/9e1e05b4-00f8-4b5e-bf27-72ff60c3fe1c) ![image](https://github.com/user-attachments/assets/680f145d-d0b3-4c99-8296-9b949b8df09b) ![image](https://github.com/user-attachments/assets/d01af59e-ac64-49e1-ad47-e929ae9fda06)
+![image](https://github.com/user-attachments/assets/9e1e05b4-00f8-4b5e-bf27-72ff60c3fe1c) ![image](https://github.com/user-attachments/assets/680f145d-d0b3-4c99-8296-9b949b8df09b) ![image](https://github.com/user-attachments/assets/d01af59e-ac64-49e1-ad47-e929ae9fda06) ![image](https://github.com/user-attachments/assets/27061f3c-1aef-436a-8c1c-65a15f98587d)
+
 
 
 
