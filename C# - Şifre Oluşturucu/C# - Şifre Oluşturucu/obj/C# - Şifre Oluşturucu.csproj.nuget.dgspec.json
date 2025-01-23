@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj": {}
+    "C:\\Users\\tumse\\OneDrive\\Masaüstü\\sifre-olusturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj": {}
   },
   "projects": {
-    "C:\\Project\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj": {
+    "C:\\Users\\tumse\\OneDrive\\Masaüstü\\sifre-olusturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj",
+        "projectUniqueName": "C:\\Users\\tumse\\OneDrive\\Masaüstü\\sifre-olusturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj",
         "projectName": "C# - Şifre Oluşturucu",
-        "projectPath": "C:\\Project\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj",
-        "packagesPath": "C:\\Users\\Casper\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\obj\\",
+        "projectPath": "C:\\Users\\tumse\\OneDrive\\Masaüstü\\sifre-olusturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu.csproj",
+        "packagesPath": "C:\\Users\\tumse\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tumse\\OneDrive\\Masaüstü\\sifre-olusturucu\\C# - Şifre Oluşturucu\\C# - Şifre Oluşturucu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tumse\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -62,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23225.8\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

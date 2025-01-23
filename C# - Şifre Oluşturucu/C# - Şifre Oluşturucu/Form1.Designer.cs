@@ -28,179 +28,190 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            button1 = new Button();
-            sifre = new TextBox();
-            listBox1 = new ListBox();
-            button2 = new Button();
-            label3 = new Label();
-            button3 = new Button();
-            secilenikopyala = new Button();
+            lblBaslik = new Label();
+            lblHaneSayisi = new Label();
+            txtHane = new TextBox();
+            cbBuyuk = new CheckBox();
+            cbRakam = new CheckBox();
+            cbKucuk = new CheckBox();
+            btnOlustur = new Button();
+            txtSifre = new TextBox();
+            lbListe = new ListBox();
+            btnKaydet = new Button();
+            lblUyari = new Label();
+            btnCopy = new Button();
+            btnSecileniKopyala = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblBaslik
             // 
-            label1.Font = new Font("Montserrat Light", 27.7499962F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(-1, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(436, 86);
-            label1.TabIndex = 0;
-            label1.Text = "Şifre Oluşturucu";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            lblBaslik.Font = new Font("Microsoft Sans Serif", 27.7499962F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBaslik.Location = new Point(-1, 63);
+            lblBaslik.Name = "lblBaslik";
+            lblBaslik.Size = new Size(498, 115);
+            lblBaslik.TabIndex = 0;
+            lblBaslik.Text = "Şifre Oluşturucu";
+            lblBaslik.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label2
+            // lblHaneSayisi
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Montserrat", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(113, 153);
-            label2.Name = "label2";
-            label2.Size = new Size(123, 26);
-            label2.TabIndex = 1;
-            label2.Text = "Hane Sayısı:";
+            lblHaneSayisi.AutoSize = true;
+            lblHaneSayisi.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblHaneSayisi.Location = new Point(129, 204);
+            lblHaneSayisi.Name = "lblHaneSayisi";
+            lblHaneSayisi.Size = new Size(140, 29);
+            lblHaneSayisi.TabIndex = 1;
+            lblHaneSayisi.Text = "Hane Sayısı";
             // 
-            // textBox1
+            // txtHane
             // 
-            textBox1.Location = new Point(242, 156);
-            textBox1.MaxLength = 2;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(56, 23);
-            textBox1.TabIndex = 2;
-            textBox1.KeyPress += textBox1_KeyPress;
+            txtHane.Location = new Point(277, 208);
+            txtHane.Margin = new Padding(3, 4, 3, 4);
+            txtHane.MaxLength = 2;
+            txtHane.Name = "txtHane";
+            txtHane.Size = new Size(63, 27);
+            txtHane.TabIndex = 2;
+            txtHane.KeyPress += txtHane_KeyPress;
             // 
-            // checkBox1
+            // cbBuyuk
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Montserrat", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            checkBox1.Location = new Point(27, 243);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(132, 25);
-            checkBox1.TabIndex = 3;
-            checkBox1.Text = "Büyük Harfler";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            cbBuyuk.AutoSize = true;
+            cbBuyuk.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cbBuyuk.Location = new Point(31, 324);
+            cbBuyuk.Margin = new Padding(3, 4, 3, 4);
+            cbBuyuk.Name = "cbBuyuk";
+            cbBuyuk.Size = new Size(144, 28);
+            cbBuyuk.TabIndex = 3;
+            cbBuyuk.Text = "Büyük Harfler";
+            cbBuyuk.UseVisualStyleBackColor = true;
+            cbBuyuk.CheckedChanged += cbBuyuk_CheckedChanged;
             // 
-            // checkBox2
+            // cbRakam
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Montserrat", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            checkBox2.Location = new Point(303, 243);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(102, 25);
-            checkBox2.TabIndex = 4;
-            checkBox2.Text = "Rakamlar";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            cbRakam.AutoSize = true;
+            cbRakam.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cbRakam.Location = new Point(346, 324);
+            cbRakam.Margin = new Padding(3, 4, 3, 4);
+            cbRakam.Name = "cbRakam";
+            cbRakam.Size = new Size(110, 28);
+            cbRakam.TabIndex = 4;
+            cbRakam.Text = "Rakamlar";
+            cbRakam.UseVisualStyleBackColor = true;
+            cbRakam.CheckedChanged += cbRakam_CheckedChanged;
             // 
-            // checkBox3
+            // cbKucuk
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Font = new Font("Montserrat", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            checkBox3.Location = new Point(165, 243);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(132, 25);
-            checkBox3.TabIndex = 5;
-            checkBox3.Text = "Küçük Harfler";
-            checkBox3.UseVisualStyleBackColor = true;
-            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
+            cbKucuk.AutoSize = true;
+            cbKucuk.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cbKucuk.Location = new Point(189, 324);
+            cbKucuk.Margin = new Padding(3, 4, 3, 4);
+            cbKucuk.Name = "cbKucuk";
+            cbKucuk.Size = new Size(145, 28);
+            cbKucuk.TabIndex = 5;
+            cbKucuk.Text = "Küçük Harfler";
+            cbKucuk.UseVisualStyleBackColor = true;
+            cbKucuk.CheckedChanged += cbKucuk_CheckedChanged;
             // 
-            // button1
+            // btnOlustur
             // 
-            button1.Enabled = false;
-            button1.Location = new Point(39, 329);
-            button1.Name = "button1";
-            button1.Size = new Size(110, 50);
-            button1.TabIndex = 6;
-            button1.Text = "Oluştur";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnOlustur.Enabled = false;
+            btnOlustur.Location = new Point(45, 439);
+            btnOlustur.Margin = new Padding(3, 4, 3, 4);
+            btnOlustur.Name = "btnOlustur";
+            btnOlustur.Size = new Size(126, 67);
+            btnOlustur.TabIndex = 6;
+            btnOlustur.Text = "Oluştur";
+            btnOlustur.UseVisualStyleBackColor = true;
+            btnOlustur.Click += btnOlustur_Click;
             // 
-            // sifre
+            // txtSifre
             // 
-            sifre.Location = new Point(177, 329);
-            sifre.MaxLength = 99;
-            sifre.Name = "sifre";
-            sifre.ReadOnly = true;
-            sifre.Size = new Size(210, 23);
-            sifre.TabIndex = 7;
+            txtSifre.Location = new Point(202, 439);
+            txtSifre.Margin = new Padding(3, 4, 3, 4);
+            txtSifre.MaxLength = 99;
+            txtSifre.Name = "txtSifre";
+            txtSifre.ReadOnly = true;
+            txtSifre.Size = new Size(239, 27);
+            txtSifre.TabIndex = 7;
             // 
-            // listBox1
+            // lbListe
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(177, 365);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(210, 184);
-            listBox1.TabIndex = 8;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            lbListe.FormattingEnabled = true;
+            lbListe.ItemHeight = 20;
+            lbListe.Location = new Point(202, 487);
+            lbListe.Margin = new Padding(3, 4, 3, 4);
+            lbListe.Name = "lbListe";
+            lbListe.Size = new Size(239, 244);
+            lbListe.TabIndex = 8;
+            lbListe.SelectedIndexChanged += lbListe_SelectedIndexChanged;
             // 
-            // button2
+            // btnKaydet
             // 
-            button2.Enabled = false;
-            button2.Location = new Point(39, 445);
-            button2.Name = "button2";
-            button2.Size = new Size(110, 50);
-            button2.TabIndex = 9;
-            button2.Text = "Kaydet";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnKaydet.Enabled = false;
+            btnKaydet.Location = new Point(45, 593);
+            btnKaydet.Margin = new Padding(3, 4, 3, 4);
+            btnKaydet.Name = "btnKaydet";
+            btnKaydet.Size = new Size(126, 67);
+            btnKaydet.TabIndex = 9;
+            btnKaydet.Text = "Kaydet";
+            btnKaydet.UseVisualStyleBackColor = true;
+            btnKaydet.Click += btnKaydet_Click;
             // 
-            // label3
+            // lblUyari
             // 
-            label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(-1, 203);
-            label3.Name = "label3";
-            label3.Size = new Size(436, 23);
-            label3.TabIndex = 10;
-            label3.TextAlign = ContentAlignment.TopCenter;
+            lblUyari.ForeColor = Color.DarkRed;
+            lblUyari.Location = new Point(-1, 271);
+            lblUyari.Name = "lblUyari";
+            lblUyari.Size = new Size(498, 31);
+            lblUyari.TabIndex = 10;
+            lblUyari.TextAlign = ContentAlignment.TopCenter;
             // 
-            // button3
+            // btnCopy
             // 
-            button3.Enabled = false;
-            button3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(39, 385);
-            button3.Name = "button3";
-            button3.Size = new Size(110, 48);
-            button3.TabIndex = 11;
-            button3.Text = "Kopyala";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnCopy.Enabled = false;
+            btnCopy.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCopy.Location = new Point(45, 513);
+            btnCopy.Margin = new Padding(3, 4, 3, 4);
+            btnCopy.Name = "btnCopy";
+            btnCopy.Size = new Size(126, 64);
+            btnCopy.TabIndex = 11;
+            btnCopy.Text = "Kopyala";
+            btnCopy.UseVisualStyleBackColor = true;
+            btnCopy.Click += btnCopy_Click;
             // 
-            // secilenikopyala
+            // btnSecileniKopyala
             // 
-            secilenikopyala.Enabled = false;
-            secilenikopyala.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            secilenikopyala.Location = new Point(39, 501);
-            secilenikopyala.Name = "secilenikopyala";
-            secilenikopyala.Size = new Size(110, 48);
-            secilenikopyala.TabIndex = 12;
-            secilenikopyala.Text = "Seçileni Kopyala";
-            secilenikopyala.UseVisualStyleBackColor = true;
-            secilenikopyala.Click += secilenikopyala_Click;
+            btnSecileniKopyala.Enabled = false;
+            btnSecileniKopyala.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSecileniKopyala.Location = new Point(45, 668);
+            btnSecileniKopyala.Margin = new Padding(3, 4, 3, 4);
+            btnSecileniKopyala.Name = "btnSecileniKopyala";
+            btnSecileniKopyala.Size = new Size(126, 64);
+            btnSecileniKopyala.TabIndex = 12;
+            btnSecileniKopyala.Text = "Seçileni Kopyala";
+            btnSecileniKopyala.UseVisualStyleBackColor = true;
+            btnSecileniKopyala.Click += btnSecileniKopyala_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
-            ClientSize = new Size(434, 573);
-            Controls.Add(secilenikopyala);
-            Controls.Add(button3);
-            Controls.Add(label3);
-            Controls.Add(button2);
-            Controls.Add(listBox1);
-            Controls.Add(sifre);
-            Controls.Add(button1);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(496, 764);
+            Controls.Add(btnSecileniKopyala);
+            Controls.Add(btnCopy);
+            Controls.Add(lblUyari);
+            Controls.Add(btnKaydet);
+            Controls.Add(lbListe);
+            Controls.Add(txtSifre);
+            Controls.Add(btnOlustur);
+            Controls.Add(cbKucuk);
+            Controls.Add(cbRakam);
+            Controls.Add(cbBuyuk);
+            Controls.Add(txtHane);
+            Controls.Add(lblHaneSayisi);
+            Controls.Add(lblBaslik);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Şifre Oluşturucu";
             ResumeLayout(false);
@@ -215,12 +226,19 @@
         private CheckBox checkBox1;
         private CheckBox checkBox2;
         private CheckBox checkBox3;
-        private Button button1;
-        private TextBox sifre;
-        private ListBox listBox1;
-        private Button button2;
+        private Button btnOlustur;
+        private TextBox txtSifre;
+        private ListBox lbListe;
+        private Button btnKaydet;
         private Label label3;
-        private Button button3;
-        private Button secilenikopyala;
+        private Button btnCopy;
+        private Button btnSecileniKopyala;
+        private Label lblBaslik;
+        private Label lblHaneSayisi;
+        private TextBox txtHane;
+        private CheckBox cbBuyuk;
+        private CheckBox cbRakam;
+        private CheckBox cbKucuk;
+        private Label lblUyari;
     }
 }

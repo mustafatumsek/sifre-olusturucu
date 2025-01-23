@@ -9,53 +9,53 @@ namespace C____Şifre_Oluşturucu
         public int r, r2, buyukharf, kucukharf, rakam;
         public char r3;
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void cbBuyuk_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true || checkBox2.Checked == true || checkBox3.Checked == true)
-            { button1.Enabled = true; }
-            else { button1.Enabled = false; }
+            if (cbBuyuk.Checked == true || cbRakam.Checked == true || cbKucuk.Checked == true)
+            { btnOlustur.Enabled = true; }
+            else { btnOlustur.Enabled = false; }
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        private void cbKucuk_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true || checkBox2.Checked == true || checkBox3.Checked == true)
-            { button1.Enabled = true; }
-            else { button1.Enabled = false; }
+            if (cbBuyuk.Checked == true || cbRakam.Checked == true || cbKucuk.Checked == true)
+            { btnOlustur.Enabled = true; }
+            else { btnOlustur.Enabled = false; }
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void cbRakam_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true || checkBox2.Checked == true || checkBox3.Checked == true)
-            { button1.Enabled = true; }
-            else { button1.Enabled = false; }
+            if (cbBuyuk.Checked == true || cbRakam.Checked == true || cbKucuk.Checked == true)
+            { btnOlustur.Enabled = true; }
+            else { btnOlustur.Enabled = false; }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOlustur_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0) { label3.Text = "Lütfen şifrenizin kaç haneli olacağını belirleyiniz."; }
+            if (txtHane.Text.Length == 0) { lblUyari.Text = "Lütfen şifrenizin kaç haneli olacağını belirleyiniz."; }
             else
             {
-                if (Convert.ToInt32(textBox1.Text) < 5) { label3.Text = "Minimum şifre uzunluğu 5 hanedir."; }
+                if (Convert.ToInt32(txtHane.Text) < 5) { lblUyari.Text = "Minimum şifre uzunluğu 5 hanedir."; }
                 else
                 {
-                    if (Convert.ToInt32(textBox1.Text) < 7) { label3.Text = "Güvenliğiniz için en az 7 haneli şifre kullanmanızı öneririz."; }
-                    else { label3.Text = null; }
-                    button2.Enabled = true;
-                    button3.Enabled = true;
+                    if (Convert.ToInt32(txtHane.Text) < 7) { lblUyari.Text = "Güvenliğiniz için en az 7 haneli şifre kullanmanızı öneririz."; }
+                    else { lblUyari.Text = null; }
+                    btnKaydet.Enabled = true;
+                    btnCopy.Enabled = true;
                     int tek = 1;
-                    sifre.Text = null;
+                    txtSifre.Text = null;
                     Random random = new Random();
 
 
-                    if (checkBox1.Checked && checkBox2.Checked && checkBox3.Checked)
+                    if (cbBuyuk.Checked && cbRakam.Checked && cbKucuk.Checked)
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
                             while (tek == 1)                //rastgele değerler atamadan önce mutlaka 1 büyük harf, 1 küçük harf ve 1 rakam olmasını sağlayan döngü.
                             {
-                                buyukharf = random.Next(1, Convert.ToInt32(textBox1.Text));
-                                kucukharf = random.Next(1, Convert.ToInt32(textBox1.Text));
-                                rakam = random.Next(1, Convert.ToInt32(textBox1.Text));
+                                buyukharf = random.Next(1, Convert.ToInt32(txtHane.Text));
+                                kucukharf = random.Next(1, Convert.ToInt32(txtHane.Text));
+                                rakam = random.Next(1, Convert.ToInt32(txtHane.Text));
                                 if (buyukharf == kucukharf || buyukharf == rakam || kucukharf == rakam)  //değişkenler aynı sayıya denk geldiyse ayrı denk gelene kadar yeniden döndürüyor.
                                 { tek = 1; }
                                 else { tek++; }
@@ -75,17 +75,17 @@ namespace C____Şifre_Oluşturucu
                                 if (r == 3) { r2 = random.Next(48, 58); }
                             }
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
-                    else if (checkBox1.Checked && checkBox2.Checked) //küçük harf olmayan
+                    else if (cbBuyuk.Checked && cbRakam.Checked) //küçük harf olmayan
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
                             while (tek == 1)
                             {
-                                buyukharf = random.Next(1, Convert.ToInt32(textBox1.Text));
-                                rakam = random.Next(1, Convert.ToInt32(textBox1.Text));
+                                buyukharf = random.Next(1, Convert.ToInt32(txtHane.Text));
+                                rakam = random.Next(1, Convert.ToInt32(txtHane.Text));
                                 if (buyukharf == rakam)
                                 { tek = 1; }
                                 else { tek++; }
@@ -102,17 +102,17 @@ namespace C____Şifre_Oluşturucu
                                 if (r == 3) { r2 = random.Next(48, 58); }
                             }
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
-                    else if (checkBox1.Checked && checkBox3.Checked)  //rakam olmayan
+                    else if (cbBuyuk.Checked && cbKucuk.Checked)  //rakam olmayan
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
                             while (tek == 1)
                             {
-                                buyukharf = random.Next(1, Convert.ToInt32(textBox1.Text));
-                                kucukharf = random.Next(1, Convert.ToInt32(textBox1.Text));
+                                buyukharf = random.Next(1, Convert.ToInt32(txtHane.Text));
+                                kucukharf = random.Next(1, Convert.ToInt32(txtHane.Text));
                                 if (buyukharf == kucukharf)
                                 { tek = 1; }
                                 else { tek++; }
@@ -129,17 +129,17 @@ namespace C____Şifre_Oluşturucu
                                 if (r == 2) { r2 = random.Next(97, 123); }
                             }
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
-                    else if (checkBox2.Checked && checkBox3.Checked)  //büyük harf olmayan
+                    else if (cbRakam.Checked && cbKucuk.Checked)  //büyük harf olmayan
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
                             while (tek == 1)
                             {
-                                kucukharf = random.Next(1, Convert.ToInt32(textBox1.Text));
-                                rakam = random.Next(1, Convert.ToInt32(textBox1.Text));
+                                kucukharf = random.Next(1, Convert.ToInt32(txtHane.Text));
+                                rakam = random.Next(1, Convert.ToInt32(txtHane.Text));
                                 if (kucukharf == rakam)
                                 { tek = 1; }
                                 else { tek++; }
@@ -157,74 +157,74 @@ namespace C____Şifre_Oluşturucu
                                 if (r == 3) { r2 = random.Next(48, 58); }
                             }
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
-                    else if (checkBox1.Checked)  //sadece büyük harf
+                    else if (cbBuyuk.Checked)  //sadece büyük harf
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
 
                             r = random.Next(1, 2);
                             if (r == 1) { r2 = random.Next(65, 91); }
 
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
-                    else if (checkBox2.Checked)   //sadece rakam
+                    else if (cbRakam.Checked)   //sadece rakam
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
 
                             r = random.Next(1, 2);
                             if (r == 1) { r2 = random.Next(48, 58); }
 
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
-                    else if (checkBox3.Checked)  //sadece küçük harf
+                    else if (cbKucuk.Checked)  //sadece küçük harf
                     {
-                        for (int i = 0; i < Convert.ToInt32(textBox1.Text); i++)
+                        for (int i = 0; i < Convert.ToInt32(txtHane.Text); i++)
                         {
 
                             r = random.Next(1, 2);
                             if (r == 1) { r2 = random.Next(97, 123); }
 
                             r3 = Convert.ToChar(r2);
-                            sifre.Text += r3.ToString();
+                            txtSifre.Text += r3.ToString();
                         }
                     }
                 }
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCopy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(sifre.Text);
+            Clipboard.SetText(txtSifre.Text);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnKaydet_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(sifre.Text);
-            button2.Enabled = false;
+            lbListe.Items.Add(txtSifre.Text);
+            btnKaydet.Enabled = false;
         }
 
-        private void secilenikopyala_Click(object sender, EventArgs e)
+        private void btnSecileniKopyala_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(listBox1.SelectedItem.ToString());
-            secilenikopyala.Enabled = false;
+            Clipboard.SetText(lbListe.SelectedItem.ToString());
+            btnSecileniKopyala.Enabled = false;
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e) //sadece sayı girişi
+        private void txtHane_KeyPress(object sender, KeyPressEventArgs e) //sadece sayı girişi
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void lbListe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            secilenikopyala.Enabled = true;
+            btnSecileniKopyala.Enabled = true;
         }
     }
 }
